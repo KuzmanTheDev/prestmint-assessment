@@ -1,0 +1,142 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 100px;
+}
+.cta_section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding: 72px 100px;
+  border-radius: 12px;
+}
+.cta_img {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  top: 3px;
+  right: 3px;
+  width: 100%;
+  object-fit: cover;
+}
+.cta_section p {
+  font-size: 48px;
+  font-family: 'Manrope', sans-serif;
+  max-width: 716px;
+  color: white;
+  text-align: center;
+  line-height: 72px;
+  margin-bottom: 48px;
+  z-index: 1;
+}
+.cta_section input {
+  width: 370px;
+  border-radius: 56px;
+  padding: 12px 32px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+.cta_section input::placeholder {
+  color: black;
+}
+.cta_section button {
+  border-radius: 56px;
+  padding: 16px 56px;
+  font-size: 20px;
+  font-weight: 700;
+  background: var(--green);
+  color: var(--dark-blue);
+  border: none;
+  margin-left: 24px;
+}
+.links {
+  padding: 40px 0 0;
+  display: flex;
+}
+.left {
+  max-width: 300px;
+  margin-right: 170px;
+}
+.left p {
+  margin-top: 16px;
+  line-height: 28px;
+  color: var(--gray);
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  padding-right: 80px;
+  flex-grow: 1;
+}
+.links_group p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.links_group button {
+  border-radius: 56px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  background: var(--green);
+  color: var(--dark-blue);
+  border: none;
+  margin-left: 8px;
+}
+.links li {
+  list-style: none;
+  margin-bottom: 32px;
+  color: var(--gray);
+}
+.rights {
+  color: var(--gray);
+}
+@media only screen and (max-width: 1201px) {
+  .left {
+    margin-right: 32px;
+  }
+  .right {
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 80px 24px;
+  }
+  .cta_section {
+    padding: 72px 24px;
+  }
+  .cta_img img {
+    width: -webkit-fill-available;
+  }
+  .input_group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: center;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .left {
+    margin-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: max-content;
+  }
+  .right {
+    padding-right: 0;
+    flex-direction: column;
+  }
+  .links_group {
+    text-align: center;
+  }
+  .rights {
+    margin: auto;
+  }
+}
